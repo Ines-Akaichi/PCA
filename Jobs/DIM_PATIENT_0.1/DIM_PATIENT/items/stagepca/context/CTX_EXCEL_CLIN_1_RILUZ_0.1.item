@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_hqPzcNX7EemlJprRO2mrsw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_hqPzcdX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter xmi:id="_hqPzctX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_hqPzc9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_hqPzdNX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_hqPzddX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_hqPzdtX7EemlJprRO2mrsw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_hqPzd9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter xmi:id="_hqPzeNX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_hqPzedX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_hqPzetX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_hqPze9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_hqPzfNX7EemlJprRO2mrsw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_hqPzfdX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter xmi:id="_hqPzftX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_hqPzf9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_hqPzgNX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_hqPzgdX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_hqPzgtX7EemlJprRO2mrsw" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_hqPzg9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter xmi:id="_hqPzhNX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_hqPzhdX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_hqPzhtX7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_hqPzh9X7EemlJprRO2mrsw" comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

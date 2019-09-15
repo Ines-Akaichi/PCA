@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5LR1EIweEemYU4925Qn6Xw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_5LR1EYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" type="id_Password" value="jqUiPpqwiNk="/>
+    <contextParameter xmi:id="_5LR1EoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" type="id_String" value="stage"/>
+    <contextParameter xmi:id="_5LR1E4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_5LR1FIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_5LR1FYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_5LR1FoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5LR1F4weEemYU4925Qn6Xw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5LR1GIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" type="id_Password" value="T2PbuU1BQsAUyUXjQ2alrw=="/>
+    <contextParameter xmi:id="_5LR1GYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" type="id_String" value="db_21807140t_stage_test"/>
+    <contextParameter xmi:id="_5LR1GoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_5LR1G4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" type="id_String" value="54464"/>
+    <contextParameter xmi:id="_5LR1HIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" type="id_String" value="10.195.25.10"/>
+    <contextParameter xmi:id="_5LR1HYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" type="id_String" value="21807140t"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5LR1HoweEemYU4925Qn6Xw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5LR1H4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" type="id_Password" value="jqUiPpqwiNk="/>
+    <contextParameter xmi:id="_5LR1IIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1IYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1IoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1I4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1JIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5LR1JYweEemYU4925Qn6Xw" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_5LR1JoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" type="id_Password" value="jqUiPpqwiNk="/>
+    <contextParameter xmi:id="_5LR1J4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1KIweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1KYweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1KoweEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5LR1K4weEemYU4925Qn6Xw" comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
