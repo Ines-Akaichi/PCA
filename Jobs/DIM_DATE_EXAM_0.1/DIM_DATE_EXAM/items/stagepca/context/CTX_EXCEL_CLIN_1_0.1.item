@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_oKvmEKSlEem8yMXD8_oTzQ" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_oKvmEaSlEem8yMXD8_oTzQ" comment="" name="EXCEL_CLIN_1_RowSeparator" prompt="EXCEL_CLIN_1_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
-  <contextParameter xmi:id="_oKvmEqSlEem8yMXD8_oTzQ" comment="" name="EXCEL_CLIN_1_FieldSeparator" prompt="EXCEL_CLIN_1_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
-  <contextParameter xmi:id="_oKvmE6SlEem8yMXD8_oTzQ" comment="" name="EXCEL_CLIN_1_File" prompt="EXCEL_CLIN_1_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1.csv"/>
-  <contextParameter xmi:id="_oKvmFKSlEem8yMXD8_oTzQ" comment="" name="EXCEL_CLIN_1_Encoding" prompt="EXCEL_CLIN_1_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
-  <contextParameter xmi:id="_oKvmFaSlEem8yMXD8_oTzQ" comment="" name="EXCEL_CLIN_1_Header" prompt="EXCEL_CLIN_1_Header?" promptNeeded="false" type="id_Integer" value="1"/>
-</talendfile:ContextType>
