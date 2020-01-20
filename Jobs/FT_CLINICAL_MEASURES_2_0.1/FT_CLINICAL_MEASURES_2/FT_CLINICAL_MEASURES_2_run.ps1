@@ -1,3 +1,0 @@
-$fileDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-cd $fileDir
-java '-Dtalend.component.manager.m2.repository=%cd%/../lib' '-Xms1024M' '-Xmx4096M' -cp '.;../lib/routines.jar;../lib/advancedPersistentLookupLib-1.2.jar;../lib/commons-collections-3.2.2.jar;../lib/dom4j-1.6.1.jar;../lib/jboss-serialization.jar;../lib/log4j-1.2.17.jar;../lib/postgresql-42.2.5.jar;../lib/talend_file_enhanced_20070724.jar;../lib/talendcsv.jar;../lib/trove.jar;ft_clinical_measures_2_0_1.jar;' stagepca.ft_clinical_measures_2_0_1.FT_CLINICAL_MEASURES_2  --context=Default %*
