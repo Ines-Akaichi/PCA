@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_cXb1AAlLEeqwWa7TELGZsg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_cXb1AQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_RowSeparator" prompt="EXCEL_BIOLOGICAL_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_cXb1AglLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Encoding" prompt="EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_cXb1AwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_File" prompt="EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Bilogical_Hashed.csv"/>
+    <contextParameter xmi:id="_cXb1BAlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Header" prompt="EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_cXb1BQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_FieldSeparator" prompt="EXCEL_BIOLOGICAL_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_cXb1BglLEeqwWa7TELGZsg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_cXb1BwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_RowSeparator" prompt="EXCEL_BIOLOGICAL_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_cXb1CAlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Encoding" prompt="EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_cXb1CQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_File" prompt="EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Bilogical_Hashed.csv"/>
+    <contextParameter xmi:id="_cXb1CglLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Header" prompt="EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_cXb1CwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_FieldSeparator" prompt="EXCEL_BIOLOGICAL_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_cXb1DAlLEeqwWa7TELGZsg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_cXb1DQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_RowSeparator" prompt="EXCEL_BIOLOGICAL_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_cXb1DglLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Encoding" prompt="EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_cXb1DwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_File" prompt="EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Bilogical_Hashed.csv"/>
+    <contextParameter xmi:id="_cXb1EAlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Header" prompt="EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_cXb1EQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_FieldSeparator" prompt="EXCEL_BIOLOGICAL_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_cXb1EglLEeqwWa7TELGZsg" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_cXb1EwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_RowSeparator" prompt="EXCEL_BIOLOGICAL_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_cXb1FAlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Encoding" prompt="EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_cXb1FQlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_File" prompt="EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Bilogical_Hashed.csv"/>
+    <contextParameter xmi:id="_cXb1FglLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_Header" prompt="EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_cXb1FwlLEeqwWa7TELGZsg" comment="" name="EXCEL_BIOLOGICAL_FieldSeparator" prompt="EXCEL_BIOLOGICAL_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

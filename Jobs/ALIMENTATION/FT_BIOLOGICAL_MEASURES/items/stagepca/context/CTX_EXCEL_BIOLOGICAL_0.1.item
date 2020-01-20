@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_B8JpQIwpEemYU4925Qn6Xw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_B8JpQYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Encoding" prompt="CNX_EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_B8JpQowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_File" prompt="CNX_EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Extraction.xlsx"/>
+    <contextParameter xmi:id="_B8JpQ4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Header" prompt="CNX_EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_B8JpRIwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_LastColumn" prompt="CNX_EXCEL_BIOLOGICAL_LastColumn?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_B8JpRYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_ThousandSeparator" prompt="CNX_EXCEL_BIOLOGICAL_ThousandSeparator?" promptNeeded="false" type="id_String" value="','"/>
+    <contextParameter xmi:id="_B8JpRowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_DecimalSeparator" prompt="CNX_EXCEL_BIOLOGICAL_DecimalSeparator?" promptNeeded="false" type="id_String" value="'.'"/>
+    <contextParameter xmi:id="_B8JpR4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_FirstColumn" prompt="CNX_EXCEL_BIOLOGICAL_FirstColumn?" promptNeeded="false" type="id_Integer" value="1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_B8JpSIwpEemYU4925Qn6Xw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_B8JpSYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Encoding" prompt="CNX_EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_B8JpSowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_File" prompt="CNX_EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Extraction.xlsx"/>
+    <contextParameter xmi:id="_B8JpS4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Header" prompt="CNX_EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_B8JpTIwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_LastColumn" prompt="CNX_EXCEL_BIOLOGICAL_LastColumn?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_B8JpTYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_ThousandSeparator" prompt="CNX_EXCEL_BIOLOGICAL_ThousandSeparator?" promptNeeded="false" type="id_String" value="','"/>
+    <contextParameter xmi:id="_B8JpTowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_DecimalSeparator" prompt="CNX_EXCEL_BIOLOGICAL_DecimalSeparator?" promptNeeded="false" type="id_String" value="'.'"/>
+    <contextParameter xmi:id="_B8JpT4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_FirstColumn" prompt="CNX_EXCEL_BIOLOGICAL_FirstColumn?" promptNeeded="false" type="id_Integer" value="1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_B8JpUIwpEemYU4925Qn6Xw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_B8JpUYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Encoding" prompt="CNX_EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_B8JpUowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_File" prompt="CNX_EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Extraction.xlsx"/>
+    <contextParameter xmi:id="_B8JpU4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Header" prompt="CNX_EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_B8JpVIwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_LastColumn" prompt="CNX_EXCEL_BIOLOGICAL_LastColumn?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_B8JpVYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_ThousandSeparator" prompt="CNX_EXCEL_BIOLOGICAL_ThousandSeparator?" promptNeeded="false" type="id_String" value="','"/>
+    <contextParameter xmi:id="_B8JpVowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_DecimalSeparator" prompt="CNX_EXCEL_BIOLOGICAL_DecimalSeparator?" promptNeeded="false" type="id_String" value="'.'"/>
+    <contextParameter xmi:id="_B8JpV4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_FirstColumn" prompt="CNX_EXCEL_BIOLOGICAL_FirstColumn?" promptNeeded="false" type="id_Integer" value="1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_B8JpWIwpEemYU4925Qn6Xw" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_B8JpWYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Encoding" prompt="CNX_EXCEL_BIOLOGICAL_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+    <contextParameter xmi:id="_B8JpWowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_File" prompt="CNX_EXCEL_BIOLOGICAL_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/Extraction.xlsx"/>
+    <contextParameter xmi:id="_B8JpW4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_Header" prompt="CNX_EXCEL_BIOLOGICAL_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_B8JpXIwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_LastColumn" prompt="CNX_EXCEL_BIOLOGICAL_LastColumn?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_B8JpXYwpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_ThousandSeparator" prompt="CNX_EXCEL_BIOLOGICAL_ThousandSeparator?" promptNeeded="false" type="id_String" value="','"/>
+    <contextParameter xmi:id="_B8JpXowpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_DecimalSeparator" prompt="CNX_EXCEL_BIOLOGICAL_DecimalSeparator?" promptNeeded="false" type="id_String" value="'.'"/>
+    <contextParameter xmi:id="_B8JpX4wpEemYU4925Qn6Xw" comment="" name="CNX_EXCEL_BIOLOGICAL_FirstColumn" prompt="CNX_EXCEL_BIOLOGICAL_FirstColumn?" promptNeeded="false" type="id_Integer" value="1"/>
+  </talendfile:ContextType>
+</xmi:XMI>

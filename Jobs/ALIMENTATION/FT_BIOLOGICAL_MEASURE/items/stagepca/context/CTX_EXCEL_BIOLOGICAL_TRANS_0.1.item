@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="__uFTgAmNEeqgPsriEqyZkA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="__uFTgQmNEeqgPsriEqyZkA" comment="" name="EXCEL_BIOLOGICAL_TRANS_RowSeparator" prompt="EXCEL_BIOLOGICAL_TRANS_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="__uFTggmNEeqgPsriEqyZkA" comment="" name="EXCEL_BIOLOGICAL_TRANS_FieldSeparator" prompt="EXCEL_BIOLOGICAL_TRANS_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  <contextParameter xmi:id="__uFTgwmNEeqgPsriEqyZkA" comment="" name="EXCEL_BIOLOGICAL_TRANS_Encoding" prompt="EXCEL_BIOLOGICAL_TRANS_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+  <contextParameter xmi:id="__uFThAmNEeqgPsriEqyZkA" comment="" name="EXCEL_BIOLOGICAL_TRANS_File" prompt="EXCEL_BIOLOGICAL_TRANS_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/df_biological_measures.csv"/>
+  <contextParameter xmi:id="__uFThQmNEeqgPsriEqyZkA" comment="" name="EXCEL_BIOLOGICAL_TRANS_Header" prompt="EXCEL_BIOLOGICAL_TRANS_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

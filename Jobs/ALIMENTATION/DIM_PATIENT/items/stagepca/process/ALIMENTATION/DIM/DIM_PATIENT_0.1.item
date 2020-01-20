@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="PROD" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Encoding" prompt="EXCEL_CLIN_DECES_Encoding?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_FieldSeparator" prompt="EXCEL_CLIN_DECES_FieldSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_File" prompt="EXCEL_CLIN_DECES_File?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Deces.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Header" prompt="EXCEL_CLIN_DECES_Header?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_RowSeparator" prompt="EXCEL_CLIN_DECES_RowSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="stage"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_Password" value="jqUiPpqwiNk="/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="public"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Encoding" prompt="EXCEL_CLIN_DECES_Encoding?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_FieldSeparator" prompt="EXCEL_CLIN_DECES_FieldSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_File" prompt="EXCEL_CLIN_DECES_File?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Deces.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Header" prompt="EXCEL_CLIN_DECES_Header?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_RowSeparator" prompt="EXCEL_CLIN_DECES_RowSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="db_21807140t_stage_production"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="21807140t"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_Password" value="T2PbuU1BQsAUyUXjQ2alrw=="/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="54464"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="public"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="10.195.25.10"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Encoding" prompt="EXCEL_CLIN_DECES_Encoding?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_FieldSeparator" prompt="EXCEL_CLIN_DECES_FieldSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_File" prompt="EXCEL_CLIN_DECES_File?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Deces.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Header" prompt="EXCEL_CLIN_DECES_Header?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_RowSeparator" prompt="EXCEL_CLIN_DECES_RowSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="db_21807140t_stage_test"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="21807140t"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_Password" value="T2PbuU1BQsAUyUXjQ2alrw=="/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="54464"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="public"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value="10.195.25.10"/>
+  </context>
+  <context confirmationNeeded="false" name="TEST">
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Encoding" prompt="EXCEL_CLIN_1_RILUZ_Encoding?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_FieldSeparator" prompt="EXCEL_CLIN_1_RILUZ_FieldSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_File" prompt="EXCEL_CLIN_1_RILUZ_File?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Riluzole.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_Header" prompt="EXCEL_CLIN_1_RILUZ_Header?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_1_RILUZ_RowSeparator" prompt="EXCEL_CLIN_1_RILUZ_RowSeparator?" promptNeeded="false" repositoryContextId="_hqHQkNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Encoding" prompt="EXCEL_CLIN_DECES_Encoding?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_FieldSeparator" prompt="EXCEL_CLIN_DECES_FieldSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_File" prompt="EXCEL_CLIN_DECES_File?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_File" value="D:/StageMai2019/Project/data/In/df_clinical_measures_1_Date_Deces.csv"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_Header" prompt="EXCEL_CLIN_DECES_Header?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="EXCEL_CLIN_DECES_RowSeparator" prompt="EXCEL_CLIN_DECES_RowSeparator?" promptNeeded="false" repositoryContextId="_r-N9oNX7EemlJprRO2mrsw" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Database" prompt="CNX_POSTGRES_DWH_Database?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value=""/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Login" prompt="CNX_POSTGRES_DWH_Login?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value=""/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Password" prompt="CNX_POSTGRES_DWH_Password?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_Password" value="jqUiPpqwiNk="/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Port" prompt="CNX_POSTGRES_DWH_Port?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value=""/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Schema" prompt="CNX_POSTGRES_DWH_Schema?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value=""/>
+    <contextParameter comment="" name="CNX_POSTGRES_DWH_Server" prompt="CNX_POSTGRES_DWH_Server?" promptNeeded="false" repositoryContextId="_5Kz7AIweEemYU4925Qn6Xw" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend Open Studio/TOS_DI-Win32-20181026_1147-V7.1.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_dhrVcIwWEemYU4925Qn6Xw" name="DataOperation"/>
+    <routinesParameter id="_dkVn4IwWEemYU4925Qn6Xw" name="Mathematical"/>
+    <routinesParameter id="_dlGc4IwWEemYU4925Qn6Xw" name="Numeric"/>
+    <routinesParameter id="_dlcbIIwWEemYU4925Qn6Xw" name="Relational"/>
+    <routinesParameter id="_dluvAIwWEemYU4925Qn6Xw" name="StringHandling"/>
+    <routinesParameter id="_dmJlwIwWEemYU4925Qn6Xw" name="TalendDataGenerator"/>
+    <routinesParameter id="_dmb5oIwWEemYU4925Qn6Xw" name="TalendDate"/>
+    <routinesParameter id="_dnJEQIwWEemYU4925Qn6Xw" name="TalendStringUtil"/>
+    <routinesParameter id="_dmxQ0IwWEemYU4925Qn6Xw" name="TalendString"/>
+    <routinesParameter id="_Qz8PUKDiEemCQ7qbg7tw3A" name="DateHandling"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u5lJsJ_QEempSPmdXKcqKw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u5lJsJ_QEempSPmdXKcqKw - metadata_clin_1_date_riluz" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.EXCEL_CLIN_1_RILUZ_File"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.EXCEL_CLIN_1_RILUZ_RowSeparator" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.EXCEL_CLIN_1_RILUZ_RowSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.EXCEL_CLIN_1_RILUZ_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.EXCEL_CLIN_1_RILUZ_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_u5lJsJ_QEempSPmdXKcqKw - metadata_clin_1_date_riluz" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Talend Open Studio/TOS_DI-Win32-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_IPP_HASH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRSTSYMPTOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE_DEBUT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1_VALUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.EXCEL_CLIN_1_RILUZ_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_IPP_HASH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRSTSYMPTOM"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE_DEBUT"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1_VALUE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="EXCEL_CLIN_1_RILUZ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata_clin_1_date_riluz" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="32" name="_IPP_HASH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="44" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="FIRSTSYMPTOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AGE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="DATDRILU_L1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATDRILU_L1_VALUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata_clin_1_date_riluz" name="REJECT">
+      <column comment="" key="false" length="32" name="_IPP_HASH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="44" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="FIRSTSYMPTOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AGE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="DATDRILU_L1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATDRILU_L1_VALUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="4" offsetLabelY="-1" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zrLlcKFaEemglNF3yKUJCQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="TRANSFORM"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="ND" expression="&quot;ND&quot;" type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="_hash_ipp" expression="row1._IPP_HASH.trim() " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPP" expression="Var.ND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" expression="Var.ND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SURNAME" expression="Var.ND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_SURNAME" expression="Var.ND " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" expression="row1.SEX==null?&quot;ND&quot;:row1.SEX " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="row1.DOB==null?&quot;ND&quot;:&#xD;&#xA;TalendDate.formatDate(&quot;dd/MM/yyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.DOB)) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGNOSTIC" expression="&quot;SLA&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" expression="row1.DIAGPROBA ==null ?&quot;ND&quot;:&#xD;&#xA;row1.DIAGPROBA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" expression="TalendDate.isDate(row1.DATEDIAG,&quot;dd/MM/yyyy&quot;)?row1.DATEDIAG:&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Full_String" expression="TalendDate.isDate(row1.DATEDIAG,&quot;dd/MM/yyyy&quot;)?TalendDate.formatDate(&quot;ddMMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.DATEDIAG)):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_MonthYear" expression="TalendDate.isDate(row1.DATEDIAG, &quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.DATEDIAG)) :&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Number" expression="DateHandling.returnMonth(row1.DATEDIAG,&quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Name" expression="DateHandling.CheckMonth(row1.DATEDIAG, &quot;/&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMMM&quot;, TalendDate.parseDate(&quot;MM&quot;, DateHandling.returnMonth(row1.DATEDIAG, &quot;/&quot;))):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Year_Number" expression="DateHandling.returnYear(row1.DATEDIAG, &quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS" expression="TalendDate.isDate(row1.FIRSTSYMPTOM,&quot;dd/MM/yyyy&quot;)?row1.FIRSTSYMPTOM:&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Full_String" expression="TalendDate.isDate(row1.FIRSTSYMPTOM,&quot;dd/MM/yyyy&quot;)?TalendDate.formatDate(&quot;ddMMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.FIRSTSYMPTOM)):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_MonthYear" expression="TalendDate.isDate(row1.FIRSTSYMPTOM, &quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.FIRSTSYMPTOM)) :&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Number" expression="DateHandling.returnMonth(row1.FIRSTSYMPTOM,&quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Name" expression="DateHandling.CheckMonth(row1.FIRSTSYMPTOM, &quot;/&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMMM&quot;, TalendDate.parseDate(&quot;MM&quot;, DateHandling.returnMonth(row1.FIRSTSYMPTOM, &quot;/&quot;))):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Year_Number" expression="DateHandling.returnYear(row1.FIRSTSYMPTOM, &quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_Val" expression="TalendDate.isDate(row1.DATDRILU_L1_VALUE,&quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.DATDRILU_L1_VALUE )&#xD;&#xA;:TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,&quot;01/01/2050&quot;) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" expression="row1.LIEUDEB==null?&quot;ND&quot;: row1.LIEUDEB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Full" expression="TalendDate.isDate(LKP_PATIENTS.DATEDCD_VALUE,&quot;dd/MM/yyyy&quot;)?&#xD;&#xA;LKP_PATIENTS.DATEDCD_VALUE:&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_String" expression="TalendDate.isDate(LKP_PATIENTS.DATEDCD_VALUE,&quot;dd/MM/yyyy&quot;)?TalendDate.formatDate(&quot;ddMMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, LKP_PATIENTS.DATEDCD_VALUE)):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_MonthYear" expression="TalendDate.isDate(LKP_PATIENTS.DATEDCD_VALUE, &quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,LKP_PATIENTS.DATEDCD_VALUE)) :&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Name" expression="DateHandling.CheckMonth(LKP_PATIENTS.DATEDCD_VALUE, &quot;/&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMMM&quot;, TalendDate.parseDate(&quot;MM&quot;, DateHandling.returnMonth(LKP_PATIENTS.DATEDCD_VALUE, &quot;/&quot;))):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Number" expression="DateHandling.returnMonth(LKP_PATIENTS.DATEDCD_VALUE,&quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Year_Number" expression="DateHandling.returnYear(LKP_PATIENTS.DATEDCD_VALUE, &quot;/&quot;) " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_IPP_HASH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRSTSYMPTOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AGE_DEBUT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_VALUE" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="LKP_PATIENTS" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_IPP_HASH" expression="row1._IPP_HASH " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="DATEDCD_VALUE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_84_jIKbcEemFVMSgThSDQA" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_84_jIKbcEemFVMSgThSDQA - metadata_clin_1_deces" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.EXCEL_CLIN_DECES_File"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.EXCEL_CLIN_DECES_RowSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.EXCEL_CLIN_DECES_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.EXCEL_CLIN_DECES_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_84_jIKbcEemFVMSgThSDQA - metadata_clin_1_deces" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Talend Open Studio/TOS_DI-Win32-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_IPP_HASH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRSTSYMPTOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE_DEBUT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDCD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDCD_VALUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.EXCEL_CLIN_DECES_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_IPP_HASH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRSTSYMPTOM"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE_DEBUT"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDCD"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDCD_VALUE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="EXCEL_CLIN_DECES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata_clin_1_deces" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="32" name="_IPP_HASH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FIRSTSYMPTOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AGE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="DATEDCD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATEDCD_VALUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata_clin_1_deces" name="REJECT">
+      <column comment="" key="false" length="32" name="_IPP_HASH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FIRSTSYMPTOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AGE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="DATEDCD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATEDCD_VALUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zrLlcKFaEemglNF3yKUJCQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="FILTER_NULL_DATE_DEATH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="LKP_PATIENTS">
+      <column comment="" key="false" length="32" name="_IPP_HASH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATEDCD_VALUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="LKP_PATIENTS" expressionFilter="row5.DATEDCD_VALUE !=null &amp;&amp; &#xA;! row5.DATEDCD_VALUE.equals(&quot;&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="_IPP_HASH" expression="row5._IPP_HASH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDCD_VALUE" expression="row5.DATEDCD_VALUE " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_IPP_HASH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRSTSYMPTOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AGE_DEBUT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDCD_VALUE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="DATDRILU_L1_Val"/>
+      <elementValue elementRef="SORT" value="date"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend Open Studio/TOS_DI-Win32-20181026_1147-V7.1.1/workspace/temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SORT_DATE_RILUZ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSortRow_1">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_hash_ipp"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IPP"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SURNAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME_SURNAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGNOSTIC"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Full_String"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_MonthYear"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Month_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Month_Name"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Year_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Full_String"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_MonthYear"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Month_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Month_Name"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Year_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1_Val"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Full"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_String"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_MonthYear"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Month_Name"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Month_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Year_Number"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="true"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="UNIQUE_PATIENTS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_1">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_2" show="false"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="_hash_ipp"/>
+      <elementValue elementRef="SORT" value="alpha"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend Open Studio/TOS_DI-Win32-20181026_1147-V7.1.1/workspace/temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SORT_HASH_IPP"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSortRow_2">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zrLlcKFaEemglNF3yKUJCQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="TRANSFORM_DATE_RILUZ1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" originalDbColumnName="ipp_hash" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" originalDbColumnName="sex" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" originalDbColumnName="birthdate" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" originalDbColumnName="diagnostic" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" originalDbColumnName="diagnostic_probability" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" originalDbColumnName="date_diagnostc" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" originalDbColumnName="date_diagnostic_full_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" originalDbColumnName="date_diagnostic_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" originalDbColumnName="date_diagnostic_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" originalDbColumnName="date_diagnostic_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" originalDbColumnName="date_diagnostic_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" originalDbColumnName="date_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" originalDbColumnName="date_fs_full_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" originalDbColumnName="date_fs_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" originalDbColumnName="date_fs_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" originalDbColumnName="date_fs_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" originalDbColumnName="date_fs_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Riluz_ON" nullable="true" originalDbColumnName="riluz_on" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" originalDbColumnName="startplace_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" originalDbColumnName="date_death_full" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" originalDbColumnName="date_death_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" originalDbColumnName="date_death_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" originalDbColumnName="date_death_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" originalDbColumnName="date_death_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" originalDbColumnName="date_death_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" originalDbColumnName="ipp" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" originalDbColumnName="surname" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" originalDbColumnName="name_surname" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="date_out_limit" expression="&quot;01/01/2050&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="_hash_ipp" expression="row4._hash_ipp " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" expression="row4.SEX " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="row4.DOB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGNOSTIC" expression="row4.DIAGNOSTIC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" expression="row4.DIAGPROBA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" expression="row4.DATEDIAG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Full_String" expression="row4.Date_Diagnostic_Full_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_MonthYear" expression="row4.Date_Diagnostic_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Number" expression="row4.Date_Diagnostic_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Name" expression="row4.Date_Diagnostic_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Year_Number" expression="row4.Date_Diagnostic_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS" expression="row4.Date_FS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Full_String" expression="row4.Date_FS_Full_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_MonthYear" expression="row4.Date_FS_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Number" expression="row4.Date_FS_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Name" expression="row4.Date_FS_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Year_Number" expression="row4.Date_FS_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_Val" expression="TalendDate.formatDate(&quot;dd/MM/yyyy&quot;, row4.DATDRILU_L1_Val).equals(Var.date_out_limit)?&quot;ND&quot;:&#xD;&#xA;TalendDate.formatDate(&quot;dd/MM/yyyy&quot;,row4.DATDRILU_L1_Val) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Riluz_ON" expression="TalendDate.formatDate(&quot;dd/MM/yyyy&quot;, row4.DATDRILU_L1_Val).equals(Var.date_out_limit)?&quot;Non&quot;:&#xD;&#xA;&quot;Oui&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" expression="row4.LIEUDEB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Full" expression="row4.Date_Death_Full " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_String" expression="row4.Date_Death_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_MonthYear" expression="row4.Date_Death_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Name" expression="row4.Date_Death_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Number" expression="row4.Date_Death_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Year_Number" expression="row4.Date_Death_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPP" expression="row4.IPP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" expression="row4.NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SURNAME" expression="row4.SURNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_SURNAME" expression="row4.NAME_SURNAME " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_hash_ipp" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SURNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_SURNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGNOSTIC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Full_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Year_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Full_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Year_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_Val" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Full" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Year_Number" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zrLlcKFaEemglNF3yKUJCQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="TRANSFORM_DATE_RILUZ2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out3">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" originalDbColumnName="ipp_hash" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" originalDbColumnName="sex" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" originalDbColumnName="birthdate" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" originalDbColumnName="diagnostic" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" originalDbColumnName="diagnostic_probability" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" originalDbColumnName="date_diagnostic" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" originalDbColumnName="date_diagnostic_full_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" originalDbColumnName="date_diagnostic_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" originalDbColumnName="date_diagnostic_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" originalDbColumnName="date_diagnostic_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" originalDbColumnName="date_diagnostic_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" originalDbColumnName="date_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" originalDbColumnName="date_fs_full_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" originalDbColumnName="date_fs_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" originalDbColumnName="date_fs_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" originalDbColumnName="date_fs_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" originalDbColumnName="date_fs_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" originalDbColumnName="date_riluz_full" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Full_String" nullable="true" originalDbColumnName="date_riluz_full_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_MonthYear" nullable="true" originalDbColumnName="date_riluz_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Name" nullable="true" originalDbColumnName="date_riluz_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Number" nullable="true" originalDbColumnName="date_riluz_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Year_Number" nullable="true" originalDbColumnName="date_riluz_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Riluz_ON" nullable="true" originalDbColumnName="riluz_on" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" originalDbColumnName="startplace_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" originalDbColumnName="date_death_full" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" originalDbColumnName="date_death_string" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" originalDbColumnName="date_death_monthyear" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" originalDbColumnName="date_death_month_name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" originalDbColumnName="date_death_month_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" originalDbColumnName="date_death_year_number" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" originalDbColumnName="ipp" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="name" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" originalDbColumnName="surname" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" originalDbColumnName="name_surname" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="_hash_ipp" expression="out2._hash_ipp " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" expression="out2.SEX " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="out2.DOB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGNOSTIC" expression="out2.DIAGNOSTIC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" expression="out2.DIAGPROBA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" expression="out2.DATEDIAG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Full_String" expression="out2.Date_Diagnostic_Full_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_MonthYear" expression="out2.Date_Diagnostic_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Number" expression="out2.Date_Diagnostic_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Name" expression="out2.Date_Diagnostic_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Year_Number" expression="out2.Date_Diagnostic_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS" expression="out2.Date_FS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Full_String" expression="out2.Date_FS_Full_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_MonthYear" expression="out2.Date_FS_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Number" expression="out2.Date_FS_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Name" expression="out2.Date_FS_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Year_Number" expression="out2.Date_FS_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_Val" expression="out2.DATDRILU_L1_Val " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Riluz_Full_String" expression="TalendDate.isDate(out2.DATDRILU_L1_Val,&quot;dd/MM/yyyy&quot;)?TalendDate.formatDate(&quot;ddMMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,out2.DATDRILU_L1_Val)):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Riluz_MonthYear" expression="TalendDate.isDate(out2.DATDRILU_L1_Val, &quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMyyyy&quot;,TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,out2.DATDRILU_L1_Val)) :&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Riluz_Month_Name" expression="DateHandling.CheckMonth(out2.DATDRILU_L1_Val, &quot;/&quot;)?&#xD;&#xA;TalendDate.formatDate(&quot;MMMM&quot;, TalendDate.parseDate(&quot;MM&quot;, DateHandling.returnMonth(out2.DATDRILU_L1_Val, &quot;/&quot;))):&quot;ND&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Riluz_Month_Number" expression="DateHandling.returnMonth(out2.DATDRILU_L1_Val,&quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Riluz_Year_Number" expression="DateHandling.returnYear(out2.DATDRILU_L1_Val, &quot;/&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Riluz_ON" expression="out2.Riluz_ON " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" expression="out2.LIEUDEB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Full" expression="out2.Date_Death_Full " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_String" expression="out2.Date_Death_String " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_MonthYear" expression="out2.Date_Death_MonthYear " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Name" expression="out2.Date_Death_Month_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Number" expression="out2.Date_Death_Month_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Year_Number" expression="out2.Date_Death_Year_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPP" expression="out2.IPP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" expression="out2.NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SURNAME" expression="out2.SURNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_SURNAME" expression="out2.NAME_SURNAME " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_hash_ipp" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGNOSTIC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGPROBA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEDIAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Full_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Diagnostic_Year_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Full_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_FS_Year_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATDRILU_L1_Val" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Riluz_ON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUDEB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Full" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_String" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_MonthYear" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Month_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Death_Year_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SURNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_SURNAME" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CNX_POSTGRES_DWH_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CNX_POSTGRES_DWH_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.CNX_POSTGRES_DWH_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CNX_POSTGRES_DWH_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.CNX_POSTGRES_DWH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueRKoBl8zjD2igFq678sTMppLGWJE+N2iNwPUKydSJ+7A=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_patient&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_hash_ipp"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGNOSTIC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGPROBA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDIAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Full_String"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_MonthYear"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Month_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Month_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Diagnostic_Year_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Full_String"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_MonthYear"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Month_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Month_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_FS_Year_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATDRILU_L1_Val"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Riluz_Full_String"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Riluz_MonthYear"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Riluz_Month_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Riluz_Month_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Riluz_Year_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Riluz_ON"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUDEB"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Full"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_String"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_MonthYear"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Month_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Month_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Death_Year_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IPP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SURNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME_SURNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="DIM_PATIENT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" originalDbColumnName="ipp_hash" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" originalDbColumnName="sex" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" originalDbColumnName="birthdate" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" originalDbColumnName="diagnostic" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" originalDbColumnName="diagnostic_probability" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" originalDbColumnName="date_diagnostic" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" originalDbColumnName="date_diagnostic_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" originalDbColumnName="date_diagnostic_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" originalDbColumnName="date_diagnostic_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" originalDbColumnName="date_diagnostic_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" originalDbColumnName="date_diagnostic_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" originalDbColumnName="date_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" originalDbColumnName="date_fs_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" originalDbColumnName="date_fs_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" originalDbColumnName="date_fs_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" originalDbColumnName="date_fs_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" originalDbColumnName="date_fs_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" originalDbColumnName="date_riluz_full" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Full_String" nullable="true" originalDbColumnName="date_riluz_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_MonthYear" nullable="true" originalDbColumnName="date_riluz_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Name" nullable="true" originalDbColumnName="date_riluz_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Number" nullable="true" originalDbColumnName="date_riluz_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Year_Number" nullable="true" originalDbColumnName="date_riluz_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Riluz_ON" nullable="true" originalDbColumnName="riluz_on" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" originalDbColumnName="startplace_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" originalDbColumnName="date_death_full" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" originalDbColumnName="date_death_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" originalDbColumnName="date_death_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" originalDbColumnName="date_death_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" originalDbColumnName="date_death_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" originalDbColumnName="date_death_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" originalDbColumnName="ipp" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" originalDbColumnName="surname" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" originalDbColumnName="name_surname" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="_hash_ipp" nullable="true" originalDbColumnName="ipp_hash" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SEX" nullable="true" originalDbColumnName="sex" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" originalDbColumnName="birthdate" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGNOSTIC" nullable="true" originalDbColumnName="diagnostic" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIAGPROBA" nullable="true" originalDbColumnName="diagnostic_probability" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDIAG" nullable="true" originalDbColumnName="date_diagnostic" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Full_String" nullable="true" originalDbColumnName="date_diagnostic_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_MonthYear" nullable="true" originalDbColumnName="date_diagnostic_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Number" nullable="true" originalDbColumnName="date_diagnostic_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Month_Name" nullable="true" originalDbColumnName="date_diagnostic_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Diagnostic_Year_Number" nullable="true" originalDbColumnName="date_diagnostic_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS" nullable="true" originalDbColumnName="date_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Full_String" nullable="true" originalDbColumnName="date_fs_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_MonthYear" nullable="true" originalDbColumnName="date_fs_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Number" nullable="true" originalDbColumnName="date_fs_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Month_Name" nullable="true" originalDbColumnName="date_fs_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_FS_Year_Number" nullable="true" originalDbColumnName="date_fs_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATDRILU_L1_Val" nullable="true" originalDbColumnName="date_riluz_full" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Full_String" nullable="true" originalDbColumnName="date_riluz_full_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_MonthYear" nullable="true" originalDbColumnName="date_riluz_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Name" nullable="true" originalDbColumnName="date_riluz_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Month_Number" nullable="true" originalDbColumnName="date_riluz_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Riluz_Year_Number" nullable="true" originalDbColumnName="date_riluz_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Riluz_ON" nullable="true" originalDbColumnName="riluz_on" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LIEUDEB" nullable="true" originalDbColumnName="startplace_fs" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Full" nullable="true" originalDbColumnName="date_death_full" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_String" nullable="true" originalDbColumnName="date_death_string" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_MonthYear" nullable="true" originalDbColumnName="date_death_monthyear" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Name" nullable="true" originalDbColumnName="date_death_month_name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Month_Number" nullable="true" originalDbColumnName="date_death_month_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Death_Year_Number" nullable="true" originalDbColumnName="date_death_year_number" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IPP" nullable="true" originalDbColumnName="ipp" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="name" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SURNAME" nullable="true" originalDbColumnName="surname" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME_SURNAME" nullable="true" originalDbColumnName="name_surname" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSortRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="LKP_PATIENTS" lineStyle="8" metaname="LKP_PATIENTS" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LKP_PATIENTS" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row3" lineStyle="0" metaname="UNIQUE" offsetLabelX="16" offsetLabelY="36" source="tUniqRow_1" target="tSortRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSortRow_2" offsetLabelX="0" offsetLabelY="0" source="tSortRow_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

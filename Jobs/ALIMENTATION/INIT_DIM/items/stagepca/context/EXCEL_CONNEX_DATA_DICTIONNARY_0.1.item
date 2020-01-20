@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_uz-McNbwEem8dpo0OGWBTw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_uz-McdbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_File" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/MatriceCorrespondanceALS.csv"/>
+    <contextParameter xmi:id="_uz-MctbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding?" promptNeeded="false" type="id_String" value="windows-1252"/>
+    <contextParameter xmi:id="_uz-Mc9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Header" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_uz-MdNbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_uz-MddbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uz-MdtbwEem8dpo0OGWBTw" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_uz-Md9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_File" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/MatriceCorrespondanceALS.csv"/>
+    <contextParameter xmi:id="_uz-MeNbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding?" promptNeeded="false" type="id_String" value="windows-1252"/>
+    <contextParameter xmi:id="_uz-MedbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Header" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_uz-MetbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_uz-Me9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uz-MfNbwEem8dpo0OGWBTw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_uz-MfdbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_File" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/MatriceCorrespondanceALS.csv"/>
+    <contextParameter xmi:id="_uz-MftbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding?" promptNeeded="false" type="id_String" value="windows-1252"/>
+    <contextParameter xmi:id="_uz-Mf9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Header" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_uz-MgNbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_uz-MgdbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uz-MgtbwEem8dpo0OGWBTw" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_uz-Mg9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_File" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_File?" promptNeeded="false" type="id_File" value="D:/StageMai2019/Project/data/In/MatriceCorrespondanceALS.csv"/>
+    <contextParameter xmi:id="_uz-MhNbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Encoding?" promptNeeded="false" type="id_String" value="windows-1252"/>
+    <contextParameter xmi:id="_uz-MhdbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_Header" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_uz-MhtbwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_uz-Mh9bwEem8dpo0OGWBTw" comment="" name="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator" prompt="EXCEL_CONNEX_DATA_DICTIONNARY_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

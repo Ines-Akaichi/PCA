@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_j61HQAlGEeqwWa7TELGZsg" name="EXCEL_BIOLOGICAL" dataPackage="_j61HQQlGEeqwWa7TELGZsg" ContextMode="true" ContextId="_cW6QkAlLEeqwWa7TELGZsg" contextName="Default" Server="Localhost 127.0.0.1" FilePath="context.EXCEL_BIOLOGICAL_File" Format="WINDOWS" Encoding="context.EXCEL_BIOLOGICAL_Encoding" FieldSeparatorValue="context.EXCEL_BIOLOGICAL_FieldSeparator" RowSeparatorValue="context.EXCEL_BIOLOGICAL_RowSeparator" UseHeader="true" HeaderValue="context.EXCEL_BIOLOGICAL_Header" FirstLineCaption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_j61HQQlGEeqwWa7TELGZsg" name="default" dataManager="_j61HQAlGEeqwWa7TELGZsg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_j61HQglGEeqwWa7TELGZsg" id="_TZuFYAlGEeqwWa7TELGZsg" label="metadata_biological">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HQwlGEeqwWa7TELGZsg" label="IPP_HASH" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HRAlGEeqwWa7TELGZsg" label="Date_de_prelevement" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HRQlGEeqwWa7TELGZsg" label="Sexe" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HRglGEeqwWa7TELGZsg" label="Date_de_naissance" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HRwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Sodium" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HSAlGEeqwWa7TELGZsg" label="Unite" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HSQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Potassium" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HSglGEeqwWa7TELGZsg" label="Unite_1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HSwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Chlorures" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HTAlGEeqwWa7TELGZsg" label="Unite_2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HTQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Albumine" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HTglGEeqwWa7TELGZsg" label="Unite_3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HTwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Calcium" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HUAlGEeqwWa7TELGZsg" label="Unite_4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HUQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Uree" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HUglGEeqwWa7TELGZsg" label="Unite_5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HUwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Glucose" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HVAlGEeqwWa7TELGZsg" label="Unite_6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HVQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Creatine_kinase" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HVglGEeqwWa7TELGZsg" label="Unite_7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HVwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Beta_2_microglobuline" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HWAlGEeqwWa7TELGZsg" label="Unite_8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HWQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Creatinine" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HWglGEeqwWa7TELGZsg" label="Unite_9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HWwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_LDH" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HXAlGEeqwWa7TELGZsg" label="Unite_10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HXQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_ASAT" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HXglGEeqwWa7TELGZsg" label="Unite_11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HXwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_ALAT" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HYAlGEeqwWa7TELGZsg" label="Unite_12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HYQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Phosphatases_alc_" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HYglGEeqwWa7TELGZsg" label="Unite_13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HYwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Gamma_GT" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HZAlGEeqwWa7TELGZsg" label="Unite_14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HZQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Prealbumine" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HZglGEeqwWa7TELGZsg" label="Unite_15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HZwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Bilirubine_conjuguee" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HaAlGEeqwWa7TELGZsg" label="Unite_16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HaQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Bilirubine_non_conjuguee" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HaglGEeqwWa7TELGZsg" label="Unite_17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HawlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Bilirubine_totale" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HbAlGEeqwWa7TELGZsg" label="Unite_18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HbQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_HDL_Cholesterol__mmol_L_" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HbglGEeqwWa7TELGZsg" label="Unite_19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HbwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_LDL_Cholesterol__mmol_L_" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HcAlGEeqwWa7TELGZsg" label="Unite_20" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HcQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Fer" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HcglGEeqwWa7TELGZsg" label="Unite_21" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HcwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Transferrine" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HdAlGEeqwWa7TELGZsg" label="Unite_22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HdQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Capacite_tot__fixation_Trf" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HdglGEeqwWa7TELGZsg" label="Unite_23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HdwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Coeff_Saturation_Trf" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HeAlGEeqwWa7TELGZsg" label="Unite_24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HeQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Recept_Soluble_Transferrine" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HeglGEeqwWa7TELGZsg" label="Unite_25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HewlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Ferritine" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HfAlGEeqwWa7TELGZsg" label="Unite_26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HfQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Triglycerides" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HfglGEeqwWa7TELGZsg" label="Unite_27" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HfwlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_CRP" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HgAlGEeqwWa7TELGZsg" label="Unite_28" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HgQlGEeqwWa7TELGZsg" label="Valeur_de_resultat_du_Creatinine_29" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HgglGEeqwWa7TELGZsg" label="Unite_30" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_j61HgwlGEeqwWa7TELGZsg" label="Column64" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
