@@ -1,0 +1,10 @@
+INSERT INTO public.dim_measure(
+	measure_name, measure_unity)
+	VALUES ('Sodium','mmol/L'),('Potassium','mmol/L'),('Chlorures','mmol/L'),('Albumine','g/L'),('Calcium','mmol/L'),
+	('Urée','mmol/L'),('Glucose','mmol/L'),('Créatine kinase','UI/L à 37°C'),('Bêta 2 microglobuline','mg/L'),('Créatinine','µmol/L'),('LDH','UI/L à 37°C'),
+	('ASAT','UI/L à 37°C'),('ALAT','UI/L à 37°C'),('Phosphatases alc.','UI/L à 37°C'),('Gamma-GT','UI/L à 37°C'),('Préalbumine','g/L'),
+	('Bilirubine conjuguée','µmol/L'),('Bilirubine non conjuguée','µmol/L'),('Bilirubine totale','µmol/L'),('HDL Cholestérol','mmol/L'),
+	('LDL Cholestérol','mmol/L'),('Fer','µmol/L'),('Transferrine','g/L'),('Capacité tot. fixation Trf','µmol/L'),
+	('Coeff Saturation Trf','%'),('Récept.Soluble Transferrine','mg/L'),('Ferritine','µg/L'),
+	('Triglycérides','mmol/L'),('CRP','mg/L');
+	
